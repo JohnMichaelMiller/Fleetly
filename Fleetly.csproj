@@ -1,0 +1,112 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{9DB51C37-2527-34B1-FD7C-E36465257B4A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Fleetly</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".github\instructions\ai-assisted-output.instructions.md" />
+    <None Include=".github\instructions\instruction-standards.instruction.md" />
+    <None Include=".github\instructions\object-role-models.instruction.md" />
+    <None Include=".github\prompts\create-instruction-file-instructions.prompt.md" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\push-to-checkout.sample" />
+    <None Include=".git\hooks\sendemail-validate.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\main" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\pack\pack-99875fdf24d2b284cf9c869151a3c175c279a38e.idx" />
+    <None Include=".git\objects\pack\pack-99875fdf24d2b284cf9c869151a3c175c279a38e.pack" />
+    <None Include=".git\objects\pack\pack-99875fdf24d2b284cf9c869151a3c175c279a38e.rev" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\main" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VertiGo.slnx\FileContentIndex\ea43e80d-41af-4a11-9b77-2f85a24632d8.vsidx" />
+    <None Include=".vs\VertiGo.slnx\v18\.wsuo" />
+    <None Include=".vs\VertiGo.slnx\v18\DocumentLayout.backup.json" />
+    <None Include=".vs\VertiGo.slnx\v18\DocumentLayout.json" />
+    <None Include=".vs\VertiGo\CopilotIndices\18.7.1259.47395\CodeChunks.db" />
+    <None Include=".vs\VertiGo\CopilotIndices\18.7.1259.47395\SemanticSymbols.db" />
+    <None Include=".vs\VertiGo\CopilotIndices\18.8.1096.64007\CodeChunks.db" />
+    <None Include=".vs\VertiGo\CopilotIndices\18.8.1096.64007\SemanticSymbols.db" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="ai-logs\2026\08\06\create-object-role-models-instruction-20260806\conversation.md" />
+    <None Include="ai-logs\2026\08\06\create-object-role-models-instruction-20260806\summary.md" />
+    <None Include="ai-logs\2026\08\06\create-ride-hailing-dispatch-orm-model-20260806\conversation.md" />
+    <None Include="ai-logs\2026\08\06\create-ride-hailing-dispatch-orm-model-20260806\summary.md" />
+    <None Include="ai-logs\2026\08\06\execute-prompt-create-instruction-files-20260806\conversation.md" />
+    <None Include="ai-logs\2026\08\06\execute-prompt-create-instruction-files-20260806\summary.md" />
+    <None Include="LICENSE" />
+    <None Include="README.md" />
+    <None Include="ride-hailing-dispatch-orm-model.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\Fleetly.slnx\copilot-chat\4a892139\sessions\" />
+    <Folder Include=".vs\Fleetly.slnx\v18\" />
+    <Folder Include=".vs\VertiGo.slnx\copilot-chat\4a892139\sessions\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
