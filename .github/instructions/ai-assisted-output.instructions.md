@@ -36,7 +36,7 @@ Contributors generating or curating AI-assisted content (code, docs, diagrams, t
 - Define required chat logging artifacts and layout.
 - Define post-creation checks before PR/merge.
 - Require README updates for durable artifacts.
-- Prefer concise, AI-readable outputs that minimize token use.
+- Prefer concise, AI-readable outputs that minimize token use (except files in `docs/`, all README files, and files in the project root, which target human technical readers).
 
 ## Terminology
 
@@ -180,6 +180,7 @@ source: "<creator or prompt path>"
 - Place logs in `ai-logs/yyyy/mm/dd/<chat-id>/`.
 - Prefer lowercase descriptive artifact filenames.
 - README entries are required for durable artifacts; optional for temporary drafts.
+- Files in `docs/`, all README files (e.g., `README.md`, `docs/README.md`), and files in the project root are exempt from token optimization requirements and should target human technical readers with full detail and explanation.
 
 ## Quality checklist
 
@@ -192,7 +193,7 @@ source: "<creator or prompt path>"
 - [ ] README updated for durable artifacts
 - [ ] No secrets/credentials in logs or prompts
 - [ ] Embedded metadata used for Markdown (no sidecar)
-- [ ] Content is concise and token-optimized
+- [ ] Content is concise and token-optimized (except `docs/` files, README files, and project root files, which prioritize human readability)
 
 ## PR checklist
 
